@@ -67,7 +67,7 @@ if st.button('Predict'):
             st.write('<p class="big-font">Please, fill the above form with your test results.</p>',unsafe_allow_html=True)
   
     else:    
-      xg_boost = joblib.load('breastCancer_lr_model.pkl')
+      xg_boost = joblib.load('breastCancer_xgb_model.pkl')
       prediction = xg_boost.predict(df_pred)
 
       if(prediction[0]==0):
