@@ -1,5 +1,6 @@
 FROM python:3.11
 COPY . /CancerPt
+COPY . /breastCancer.dataTOp2.ipynb
 WORKDIR /CancerPt
 RUN pip install -r requirements.txt
 EXPOSE $PORT
